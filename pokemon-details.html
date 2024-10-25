@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details Pokemon</title>
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+
+    <!-- Nosso CSS -->
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/pokemon-details.css">
+</head>
+
+<body>
+
+    <section class="content-details-pokemon">
+        <div class="basic-informations">
+            <a href="index.html" class="return-list-pokemons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                    class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                </svg>
+            </a>
+            <h1 class="pokemon-name" id="name">Nome</h1>
+            <h2 class="pokemon-number" id="number">#001</h2>
+            <ul>
+                <li id="type1">Type1</li>
+                <li id="type2">Type2</li>
+            </ul>
+
+            <img class="pokemon-img" id="image-pokemon" src="" alt="">
+        </div>
+
+        <div class="pokemon-details">
+
+            <div class="sections">
+                <span id="section-about" class="about active">
+                    About
+                </span>
+                <span id="section-base-stats" class="base-stats">
+                    Base Stats
+                </span>
+                <span id="section-evolution" class="evolution">
+                    Evolution
+                </span>
+                <span id="section-moves" class="moves">
+                    Moves
+                </span>
+            </div>
+            <div class="details">
+                <div id="section-1" class="show section">
+                    <table class="table-details table-two-columns">
+                        <tbody>
+                            <tr>
+                                <td>Species</td>
+                                <td id="species-value">Height</td>
+                            </tr>
+                            <tr>
+                                <td>Height</td>
+                                <td id="height-value"></td>
+                            </tr>
+                            <tr>
+                                <td>Weight</td>
+                                <td id="weight-value"></td>
+                            </tr>
+                            <tr>
+                                <td>Abilities</td>
+                                <td id="abilities-value"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2 id="breending">Breeding</h2>
+                    <table class="table-details table-two-columns">
+                        <tbody>
+                            <tr>
+                                <td>Gender</td>
+                                <td id="gender-value"></td>
+                            </tr>
+                            <tr>
+                                <td>Egg Groups</td>
+                                <td id="egg-groups-value"></td>
+                            </tr>
+                            <tr>
+                                <td>Egg Cycle</td>
+                                <td id="egg-cycle-value"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="section-2" class="hidden">
+                    <table class="table-details table-three-columns">
+                        <tbody>
+                            <tr>
+                                <td>HP</td>
+                                <td id="hp-value">45</td>
+                                <td><div class="bar bar-red" style="width: 60%;" id="hp-value-bar"></div></td>
+                            </tr>
+                            <tr>
+                                <td>Attack</td>
+                                <td id="attack-value">60</td>
+                                <td><div class="bar bar-green" style="width: 100%;" id="attack-value-bar"></div></td>
+                            </tr>
+                            <tr>
+                                <td>Defense</td>
+                                <td id="defense-value">60</td>
+                                <td><div class="bar bar-red" id="defense-value-bar"></div></td>
+                            </tr>
+                            <tr>
+                                <td>Sp. Atk</td>
+                                <td id="sp-atk-value">60</td>
+                                <td><div class="bar bar-green" id="sp-atk-value-bar"></div></td>
+                            </tr>
+                            <tr>
+                                <td>Sp. Def</td>
+                                <td id="sp-def-value">60</td>
+                                <td><div class="bar bar-green" id="sp-def-value-bar"></div></td>
+                            </tr>
+                            <tr>
+                                <td>Speed</td>
+                                <td id="speed-value">60</td>
+                                <td><div class="bar bar-red" id="speed-value-bar"></div></td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td id="total-value">60</td>
+                                <td><div class="bar bar-green" id="total-value-bar"></div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="section-3" class="hidden">
+                    <h2>Next evolution</h2>
+                    <div class="card-evolution"> 
+                        <img id="evolution-image" src="" alt="">
+                        <h3 id="evolution-name"></h3>
+                        <h3 id="evolution-level"></h3>
+                    </div>
+                </div>
+                <div id="section-4" class="hidden">
+                    <div class="section-moves-box">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosso JS -->
+    <script src="/assets/js/pokemon-model.js"></script>
+    <script src="/assets/js/poke-api.js"></script>
+    <script src="/assets/js/details-pokemon.js"></script>
+</body>
+
+</html>
