@@ -5,7 +5,7 @@
 
 ## :rocket: Descrição do projeto
 
-Desenvolver os detalhes dos pokémons consumindo a API pokeapi. Para tal foram pesquisadas em várias camadas as informações pertinentes, como altura, peso, próximo nível de evolução, ataques do pokémon, vida total e outros. Este projeto faz parte do desafio de código da [DIO](https://dio.me).
+Desenvolvido os detalhes dos pokémons consumindo a API pokeapi. Para tal foram pesquisadas em várias camadas as informações pertinentes, como altura, peso, próximo nível de evolução, ataques do pokémon, vida total e outros. Este projeto faz parte do desafio de código da [DIO](https://dio.me).
 
 ## :books: Modificações
 
